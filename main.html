@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<Title> Main </Title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mainstyles.css">
+<script src= "modernizer.custom.05819.js"></script>
+</head>
+<div id="wrapper">
+<body>
+<header>
+<h1 style = "text-align:center;"> Hello this what we have on offer at the moment.</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="main.html">Main</a></li>
+    <li><a href="Forums.html">Forums</a></li> 
+    <li><a href="about.html">About</a></li>
+	<li><a href ="Web security.html">Web Secruity</a></li>
+  </ul>
+ 
+</nav>
+<h2> We are planning to talk about history from the start of humanity to today.<h2>
+<article>
+	<form>
+		<fieldset>
+		 <label for= "yvalue">
+		 Enter a year 
+		 </label>
+		 <input type = "number" id = "yvalue" name= "yvalue" />
+		 </fieldset>
+		 <fieldset>
+		 <button type="button" id="button">See how many years it been </button>
+		 </fieldset>
+		 <fieldset>
+			<p>Here how many years ago.</p>
+			<p id = "svalue"></p>
+		 </fieldset>
+	</form>
+
+</article>
+<script>
+ function myfuction(){
+	var yearY = document.getElementById("yvalue").value;
+	var yearS = (2023-yearY);
+	document.getElementById("svalue").innerHTML = yearS;
+	
+ }
+	 var btn = document.getElementById("button")
+	 if(btn.addEventListener){
+		addEventListener("click", myfuction, false);
+		}
+	  else if(btn.attachEvent){
+		btn.attachEvent("onclick",myfuction);
+	  }
+
+	
+</script>
+</body>
+<footer>
+<h3>Here is our contact infomation</h3>
+<h4> Phone Number:(909)-785-5947 </h4>
+<h5> Email: worldhistory@gmail.com</h5>
+<h6>Copyright &copy; 2023 Mario Guzman</h6>
+
+</footer>
+</html>

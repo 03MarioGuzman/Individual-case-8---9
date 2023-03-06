@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<Title> Forums </Title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mainstyles.css">
+
+</head>
+<div id="wrapper">
+<body>
+<header>
+<h1 style = "text-align:center;"> Welcome to the Forums</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="main.html">Main</a></li>
+    <li><a href="Forums.html">Form</a></li> 
+    <li><a href="about.html">About</a></li>
+	<li><a href ="Web security.html">Web Secruity</a></li>
+  </ul>
+ 
+</nav>
+<main>
+<form name = "form" method = "post" onsubmit = "completeForm()" >
+	<fieldset id = "Info">
+	<label for = "fname">First Name:
+	</label><br>
+	<input type="text" id = "fname" name = "fname" value = "" ><br>
+	<label for ="lname">Last Name:</label><br>
+	<input type = "text" id ="lname" name = "lname"  value = ""/><br><br>
+	<div id = "emailerror">
+	<label for = "email">Email:</label><br>
+	<input type = "text" id = "email" name = "email" value = ""  /><br><br>
+	</div>
+	<label for = "Age">Age: </label><br>
+	<input type = "number" id = "age"/><br><br>
+	<input type = "checkBox" id = "Male" >
+	<label for = "Male">Male</label>
+	<input type = "checkBox" id = "Female" >
+	<label for = "Female">Female</label><br><br>
+	<label for = "histroy">History Knowgele</label><br>
+	<select id = "knowgele" name = "histroy">
+		<option value = "" > </option>
+		<option value = "Some">Some History</option>
+		<option value = "degree">History degree</option>
+	
+	</select><br>
+	
+	<div style="margin-top:2rem;" id="displayArray"></div>
+ 
+  <div style="margin-top:2rem;">
+    <label for="itemsArray">American History</label>
+    <input type='checkbox' name='itemsArray[]' value='hist001'  onChange="handleClick(this)" />
+  </div>
+  <br/>
+ 
+  <div>
+    <label for="itemsArray">Asian History</label>
+    <input type='checkbox' name='itemsArray[]' value='hist002'
+onChange="handleClick(this)" />
+  </div>
+  <br/>
+ 
+  <div>
+    <label for="itemsArray">Roman History</label>
+    <input type='checkbox' name='itemsArray[]' value='hist003'
+onChange="handleClick(this)" />
+  </div>
+  <br/>
+ 
+  <div>
+    <label for="itemsArray">Indian History</label>
+    <input type='checkbox' name='itemsArray[]' value='hist004'
+onChange="handleClick(this)" />
+  </div>
+	<input type = "submit" id = "submit" value = "Submit"/>
+	<span role = "alert">
+	</fieldset>
+	
+</form>
+
+</main>
+<script src = "script.js"></script>
+</body>
+<footer>
+<h3>Here is our contact infomation</h3>
+<h4> Phone Number:(909)-785-5947 </h4>
+<h5>Copyright &copy; 2023 Mario Guzman</h5>
+</footer>
+</html>
